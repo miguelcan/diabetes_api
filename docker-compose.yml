@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  server:
+    build: ./server
+    ports:
+      - "8001:8001"
+  frontend:
+    build: ./app
+    ports:
+      - "8000:8000"
